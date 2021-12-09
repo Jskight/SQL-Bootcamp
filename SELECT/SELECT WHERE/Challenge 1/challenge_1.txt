@@ -3,3 +3,8 @@
 @Email:  steven.wells1936@outlook.com
 @Last modified by:   skigh
 @Last modified time: 2021-12-09T11:41:41-05:00
+
+ A customer forgot their wallet at our store! We need to track down their Email
+ to inform them.
+
+ What is the email for the customer with the name Nancy Thomas?

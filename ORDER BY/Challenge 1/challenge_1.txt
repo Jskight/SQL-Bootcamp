@@ -3,3 +3,7 @@
 @Email:  steven.wells1936@outlook.com
 @Last modified by:   skigh
 @Last modified time: 2021-12-09T11:56:46-05:00
+
+We want to reward our first 10 paying customers.
+
+What are the customer_ids of the first 10 customers who created a payment?
