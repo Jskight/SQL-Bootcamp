@@ -1,0 +1,11 @@
+@Author: Steven Wells <skigh>
+@Date:   2021-12-09T00:53:15-05:00
+@Email:  steven.wells1936@outlook.com
+@Last modified by:   skigh
+@Last modified time: 2021-12-09T00:56:41-05:00
+
+Corporate HQ is conducting a study on the relationship between replacement cost
+and a movie MPAA rating (e.g. G, PG, R, etc...).
+
+What is the average replacement cost per MPAA rating?
+  Note: you may need to expand the AVG column to view correct results

@@ -1,0 +1,11 @@
+@Author: Steven Wells <skigh>
+@Date:   2021-12-09T10:34:59-05:00
+@Email:  steven.wells1936@outlook.com
+@Last modified by:   skigh
+@Last modified time: 2021-12-09T10:34:59-05:00
+
+We are launching a platinum service for our most loyal customers.
+We will assign platinum status to customers that have had 40 or more transaction
+payments.
+
+What customer_ids are eligible for platinum status?ß
