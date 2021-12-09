@@ -1,0 +1,8 @@
+@Author: Steven Wells <skigh>
+@Date:   2021-12-09T11:57:31-05:00
+@Email:  steven.wells1936@outlook.com
+@Last modified by:   skigh
+@Last modified time: 2021-12-09T12:07:47-05:00
+
+If that previous customer can watch any movie that is 50 minutes or less
+in runtime, how many options does she have?
