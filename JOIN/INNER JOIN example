@@ -1,0 +1,31 @@
+SELECT * FROM TableA
+INNER JOIN TableB
+ON TableA.col_match = TableB.col_match
+
+-- Imagine a Venn Diagram
+-- Where one circle represents TableA.col_match 
+-- The other represents TableB.col_match
+-- The intersection / cross-over is the returned result
+-- This is only true for a INNER JOIN
+
+-- Example
+-- Tracking logins for a virtual conference
+-- TableA = Registartions - users who have registered for the conference 
+-- TableB = Logins - user who have logged in to the conference
+SELECT * FROM Registrations
+INNER JOIn Lgins
+ON Registrations.name = Login.name
+-- The returned results are the names of users
+-- who registered and logged in for the conference
+-- INNER JOINs are looking for matches that exist in both tables
+
+-- If you want to get rid of duplication you need to specify what results you want
+SELECT reg_id, Logins.name,log_id
+FROM Registartions
+INNER JOIN Logins
+ON Registartions.name = Logins.name
+-- you have to specifiy fields that exist in both tables
+-- Example name exists in both tables
+-- This is solved by specifying Login.name over Registration.name
+
+-- JOIN command defualts to INNER JOIN
