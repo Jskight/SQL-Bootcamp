@@ -1,0 +1,30 @@
+-- LEFT OUTER JOIN
+-- results in the set of records that are in the left table
+-- if there is no match with the right table
+-- the results are null
+
+SELECT * FROM TableA
+LEFT OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+
+-- Order matters for LEFT OUTER JOIN
+
+-- Video Conference example
+SELECT * FROM Registration
+LEFT OUTER JOIN Logins
+ON Registrations.name = Logins.name
+
+
+-- Clarifying WHERE null
+
+-- What is we wanted entires unique to Table A? 
+SELECT * FROM TableA
+LEFT OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+WHERE TableB.id IS null
+
+-- Video Conference example
+SELECT * FROM Registrations
+LEFT OUTER JOIN LoginsON Registrations.name = Logins.name
+ON Registrations.name = Logins.name
+WHERE Logins.log_id IS null

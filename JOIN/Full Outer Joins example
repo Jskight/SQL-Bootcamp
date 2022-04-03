@@ -1,0 +1,61 @@
+-- There are a few different types od OUTER JOINS
+
+-- They will allow us to specify how to deal with values only present in one of the
+-- tables being joined.
+
+-- These are the more complex JOINs
+
+-- FULL OUTER JOIN
+
+SELECT * FROM TableA
+FULL OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+
+-- Video Conference example
+SELECT * FROM Registrations
+FULL OUTER JOIN Logins
+ON Registartions.name = Logins.name
+
+-- Clarifying WHERE null
+
+SELECT * FROM TableA
+FULL OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+WHERE TableA.id IS null OR
+TableB.id IS null
+
+-- Video Conference example
+SELECT * FROM Registrations 
+FULL OUTER JOIN Logins
+ON Registrations.name = Logins.name
+WHERE Registartions.reg_id IS null OR
+Logins.log_id IS null
+
+
+
+-- dvdrental.tar
+-- Making sure all customer data is matached to a purcahse histroy
+SELECT * FROM customer
+FULL OUTER JOIN payment
+ON customer.customer_id = payment.customer_id
+WHERE customer.customer_id IS null
+OR payment.payment_id IS null
+-- returns empty results
+-- all customer data is matched to a purchase history
+-- there are no unique rows to either table
+
+
+
+-- LEFT OUTER JOIN
+-- results in the set of records that are in the left table
+-- if there is no match with the right table
+-- the results are null
+
+SELECT * FROM TableA
+LEFT OUTER JOIN TableB
+ON TableA.col_match = TableB.col_match
+
+
+
+
+-- Clarifying WHERE null
